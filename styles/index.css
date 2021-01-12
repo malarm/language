@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+
+html {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+body {
+  @apply bg-gray-200 p-12;
+}
+
+.user {
+  padding: 1rem;
+}
+.user-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  .user {
+    padding: 2rem;
+    margin: 1rem;
+    background: #ccc;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  cursor: pointer;
+  /*background-color: rgba(229, 231, 235, var(--bg-opacity));*/
+
+}
+::-webkit-scrollbar-track {
+  background-color: rgba(229, 231, 235, var(--bg-opacity));
+  cursor: pointer;
+  /*background: red;*/
+}
+::-webkit-scrollbar-thumb {
+  cursor: pointer;
+  background-color: #a0aec0;
+  /*outline: 1px solid slategrey;*/
+}
